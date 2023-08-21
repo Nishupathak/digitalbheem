@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <img src="df2f0760c1af406ea029d5f487625df8.png" alt="logo">
+  <title>Hotel Booking Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Hotel Booking Registration Form</h1>
+    <form id="registration-form">
+        <h1>CUSTOMER INFO</h1>
+      <label for="name"> Customer Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="check-in">Check-In Date:</label>
+      <input type="date" id="check-in" name="check-in" required>
+
+      <label for="Total no. of days">Total No. of Days:</label>
+      <input type="no." id="total no. of days" name="total no. of days" required>
+
+      <label for="Total no. of persons">Total no. of Persons:</label>
+      <input type="no." id="total no. of persons" name="total no. of persons" required>
+
+      <label for="check-out">Check-Out Date:</label>
+      <input type="date" id="check-out" name="check-out" required>
+
+      <h1>ROOM INFORMATION</h1>
+      <label for="room-type">Room Type:</label>
+      <select id="room-type" name="room-type">
+        <option value="single">single</option>
+        <option value="double">Delux</option>
+        <option value="suite">Suite</option>
+        </select>
+        <label for="Amenities">Amenities</label>
+        <select id="Amenities" name="Amenities">
+            <option value="AC">AC</option>
+            <option value="Locker">Locker</option>
+            </select>
+
+       <h1>ROOM RATES</h1>
+            <label for="room rates">Room Rates:</label>
+            <select id="room rates" name="room rates">
+                <option value="Delux Room:2500/-">Delux Room:2500/-</option>
+                <option value="Suite Room:4000/-">Suite Room:4000/-</option>
+                <option value="AC Room:1000/-">AC Room:1000/-</option>
+                <option value="Locker Room:300/-">Locker Room:300/-</option>
+                </select>
+
+        <h1>ADVANCE PAYMENT</h1>
+             <label for="Advance Payment">Advance Amount</label>  
+             <input type="no." id="Advance Amount" name="Advance Amount" required>     
+
+        <h1>BALANCE AMOUNT</h1>
+           <label for="Balance Amount">Balance Amount</label>
+           <input type="Total Amount-Advance Amount" id="CALCULATION" name="CALCULATION" required>
+           
+        </select>
+
+        <h1>TOTAL COST CALCULATION</h1>
+        <label for="total room cost ">Total Room Cost:</label>
+        <input type="Room Rate*Total No. of Days" id="CALCULATION" name="CALCULATION" required>
+        <label for="total amenities cost">Total Amenities cost:</label>
+        <input type="Amenities Cost*total No. of Days" id="CALCULATION" name="CALCULATION" required>
+        <label for="total  cost">Total cost:</label>
+        <input type="Total Room Cost+Total Amenities Cost" id="CALCULATION" name="CALCULATION" required>
+    </select>
+
+      <h1>ADDITIONAL CHARGES</h1>
+      <label for="upto 2 people">Upto 2 People:</label>
+      <select id="upto 2 people" name="Upto 2 People:">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        </select>
+
+      <label for="per day cost for extra person">Per Day cost for Extra Person:</label>
+      <select id="per day cost for extra person" name="Per Day cost for Extra Person:">
+        <option value="1000/-">1000/-</option>
+        </select>
+      
+</select>
+      
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
